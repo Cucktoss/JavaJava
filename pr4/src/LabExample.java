@@ -14,6 +14,7 @@ class LabExample extends JFrame
     LabExample()
     {
         super("Example");
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
         setSize(250,150);
         add(button1);
