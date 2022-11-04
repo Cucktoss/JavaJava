@@ -71,8 +71,8 @@ public class RandomFigure extends JFrame{
     }
     private void setObjectives() {
         for (int i = 0; i < lenRects; i++) {
-            int a = (int) (Math.random() * 150+15);
-            int b = (int) (Math.random()* 150+15);
+            int a = (int) (Math.random() * 150+30);
+            int b = (int) (Math.random()* 150+30);
             int c = (int) (Math.random()*700+100);
             int d = (int) (Math.random()*700+100);
             rects[i] = new Rectangle(c, d, a , b );
@@ -81,14 +81,14 @@ public class RandomFigure extends JFrame{
         for (int i = 0; i < lenCircles; i++) {
             int c = (int) (Math.random()*700+100);
             int d = (int) (Math.random()*700+100);
-            int r = (int) (Math.random() * 150+15);
+            int r = (int) (Math.random() * 150+30);
             circles[i] = new Circle(c,  d,  r );
             circles[i].setColor(newColor());
         }
         for (int i = 0; i < lenSquares; i++){
             int c = (int) (Math.random()*700+100);
             int d = (int) (Math.random()*700+100);
-            int a = (int) (Math.random() * 150+15);
+            int a = (int) (Math.random() * 150+30);
             squares[i] = new Square(c,d, a);
             squares[i].setColor(newColor());
         }
